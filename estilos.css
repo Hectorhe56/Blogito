@@ -1,0 +1,77 @@
+/* Variables Globales: Paleta Minimalista y Suave */
+:root {
+    --color-principal: #333333; /* Azul pastel muy suave */
+    --color-texto-header: #000000; /* Gris oscuro elegante para el texto superior */
+    --color-fondo: #5d58d7; /* Blanco roto/crema muy limpio */
+    --color-texto: #000000; /* Gris suave (menos agresivo que el negro) */
+    --color-blanco: #6165c2;
+    --sombra-minimalista: 0 4px 20px rgba(0, 0, 0, 0.02), 0 2px 5px rgba(0, 0, 0, 0.01);
+    --borde-suave: 16px; /* Bordes más redondeados y modernos */
+}
+
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; /* Tipografía más moderna y limpia */
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    line-height: 1.7; /* Más espacio entre líneas para leer mejor */
+    scroll-behavior: smooth;
+}/* Cabecera minimalista fija */
+header {
+    background-color: var(--color-blanco); /* Fondo blanco para un look limpio */
+    color: var(--color-texto-header);
+    text-align: center;
+    padding: 30px 20px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #000000; /* Línea divisoria muy fina */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: -0.5px; /* Letras un poco más juntas (estilo premium) */
+    font-weight: 700;
+}
+
+header p {
+    margin: 8px 0 20px;
+    font-size: 1.1rem;
+    color: #000000; /* Texto secundario más suave */
+}
+
+/* Menú de navegación */
+nav a {
+    color: var(--color-texto-header);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--color-principal); /* Fondo pastel suave al pasar el cursor */
+    color: #000000; /* Toque de color de acento */
+}
+
+/* Contenido principal */
+main {
+    max-width: 800px; /* Un poco más estrecho para centrar la vista */
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Cada sección (Efecto Tarjeta Flotante) */
+section {
+    background-color: var(--color-blanco);
+    padding: 35px; /* Más espacio interno para que el contenido "respire" */
+    margin-bottom: 30px;
+    border-radius: var(--borde-suave);
+    box-shadow: var(--sombra-minimalista); /* Sombra casi invisible pero elegante */
+    border: 1px solid rgba(0, 0, 0, 0.03); /* Borde sutil */
+}
